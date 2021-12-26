@@ -54,10 +54,10 @@ ul li{
     text-align: center;
     font-size: 0.8em;
     font-weight: 400;
-    padding: 10px;
     text-transform: uppercase;
     color: #fff;
     height: 50px;
+    line-height: 50px;
 }
 
 .banner span{
