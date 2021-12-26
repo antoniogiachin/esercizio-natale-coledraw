@@ -186,9 +186,46 @@ ul li{
     padding: 30px;
 } 
 
+#jumbomain .jumbo-info .try{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#jumbomain .jumbo-info .try .btn-try{
+    background-color: transparent;
+    padding: 8px 16px;
+    border: 2px solid #fff;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#jumbomain .jumbo-info .try .stars{
+    width: 80px;
+}
+
+#jumbomain .jumbo-info .try .stars img{
+    width: 100%;
+}
+
 #jumbomain .jumbo-info .plans .pl-options span:nth-child(2){
     float: right;
 }
+
+#jumbomain .jumbo-info .plans .pl-btn{
+    display: flex;
+    gap: 10px;
+}
+
+#jumbomain .jumbo-info .plans .btn-plans{
+    display: inline-block;
+    flex-basis: 50%;
+    padding: 20px;
+    display: inline-block;
+    cursor: pointer;
+}
+
 
 
 
