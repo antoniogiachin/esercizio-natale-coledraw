@@ -19,78 +19,104 @@
     </div>
     <!-- fine banner -->
 
-    <!-- inizio jumbotron -->
+    <!--inizio jumbotron -->
     <div id="jumbotron">
 
-        <!-- inizio jumbohead -->
-        <div id="jumbohead">
+        <!-- jumbo nav -->
+        <div class="jumbo-nav">
 
-            <!-- jumbohead nav top -->
-            <div class="jumbo-nav top">
+            <!-- nav top -->
+            <div class="j-nav top">
 
-                <ul>
+                <ul class="flex-row">
                     <li>
-                        <a href="#" class="cl-a3" >Informativa sui Cookie - Novità</a>
+                        <a href="#">Informativa sui Cookie - Novità</a>
                     </li>
                     <li>
-                        <a href="#" class="cl-a3 phone" > +44 2039 01 8665</a>
+                        <a href="#"><i class="fas fa-phone"></i>+44 2039 01 8665</a>
                     </li>
                     <li>
-                        <a href="#" class="cl-a3 chat" >Chat</a>
+                        <a href="#"><i class="fas fa-comment-alt"></i>Chat</a>
                     </li>
                     <li>
-                        <a href="#" class="cl-a3 account" >Account</a>
+                        <a href="#"><i class="fas fa-user"></i>Account</a>
                     </li>
                     <li>
-                        <a href="#" class="cl-a3 shop" >Carrello</a>
+                        <a href="#"><i class="fas fa-shopping-cart"></i>Carrello</a>
                     </li>
                     <li>
-                        <a href="#"> 
-
-                            <select name="lang" id="lang-select">
-
-                                <option value="" disabled selected>Italiano</option>
-                                <option value="2">Deutsch</option>
-                                <option value="3">Espanol</option>
-                                <option value="4">English</option>
-                                <option value="5">Francais</option>
-
+                        <a href="#">
+                            <select name="lang" id="lang-sel">
+                                <option value="" no selected>Italiano</option>
+                                <option value="1">English</option>
+                                <option value="2">Deteusch</option>
+                                <option value="3">Fransè</option>
+                                <option value="4">Espanol</option>
+                                <option value="5">Ammericano</option>
                             </select>
-
                         </a>
                     </li>
                 </ul>
 
             </div>
 
-            <!-- jumbohead nav bottom -->
-            <div class="jumbo-nav bottom">
+            <!-- nav bottom -->
+            <div class="j-nav btm">
 
-                <ul>
-                    <li class="logo-jumbo">
+                <ul class="flex-row">
+                    <li>
                         <a href="#">
-                            <img src="img/logo_coreldraw.webp" alt="">
+                            <img src="img/logo_coreldraw.webp" alt="jumbo-logo">
                         </a>
                     </li>
-
                     <li>
-                        <a href="#">Prodotti <span class="arrowhead">&#8964;</span></a>
+                        <a href="#">Prodotti <i class="fas fa-angle-down cl-a3"></i></a>
+
+                        <!-- dropdown -->
                         <div class="dropdown">
-                            <a href="#">Grafica creativa</a>
-                            <div class="dropright">
-                                <a href="#">CorelDRAW Graphics Suite 2021 (Windows / Mac)</a>
-                                <a href="#">CorelDRAW Standard 2021</a>
-                                <a href="#">CorelDRAW Essentials 2021</a>
-                                <hr>
-                                <p>Edizioni per App Store</p>
-                                <a href="#">CorelDRAW Store Edition (Windows)</a>
-                                <a href="#">CorelDRAW Store Edition (Mac)</a>
-                            </div>
-                            
-                            <a href="#">Grafica tecnica</a>
-                            <a href="#">Licenze</a>
+                            <ul>
+                                <li>
+                                    <a href="#">Grafica creativa</a>
+
+                                    <!-- dropright  -->
+                                    <div class="dropright">
+                                        <ul>
+                                            <li>
+                                                <a href="#">CorelDRAW Graphics Suite 2021 (Windows / Mac)</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">CorelDRAW Standard 2021</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">CorelDRAW Essentials 2021</a>
+                                            </li>
+                                        </ul>
+                                        <hr class="cl-a3">
+                                        <ul>
+                                            <li class="dropright-ed">Edizioni per App Store</li>
+                                            <li>
+                                                <a href="#">CorelDRAW Store Edition (Windows)</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">CorelDRAW Store Edition (Mac))</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- fine dropright -->
+                                </li>
+
+                                <li>
+                                    <a href="#">Grafica tecnica</a>
+                                </li>
+                                <li>
+                                    <a href="#">Licenze</a>
+                                </li>
+                            </ul>
                         </div>
+                        <!-- fine dropdown -->
+
                     </li>
+
                     <li>
                         <a href="#">Prove gratuite</a>
                     </li>
@@ -98,87 +124,51 @@
                         <a href="#">Business</a>
                     </li>
                     <li>
-                        <a href="#">Supporto <span class="arrowhead">&#8964;</span></a>
+                        <a href="#">Supporto <i class="fas fa-angle-down cl-a3"></i></a>
+                        
+                        <!-- dropdown -->
                         <div class="dropdown">
-                            <a href="#">Patch e Aggiornamenti</a>
-                            <a href="#">Knowledgebase</a>
-                            <a href="#">Visualizza tutti</a>
+                            <ul>
+                                <li>
+                                    <a href="#">Patch e aggiornamenti</a>
+                                </li>
+                                <li>
+                                    <a href="#">Knowledgebase</a>
+                                </li>
+                                <li>
+                                    <a href="#">Visualizza tutti</a>
+                                </li>
+                            </ul>
                         </div>
+                        <!-- fine dropdown -->
+
                     </li>
+
                     <li>
-                        <a href="#">Apprendimento <span class="arrowhead">&#8964;</span></a>
+                        <a href="#">Apprendimento <i class="fas fa-angle-down cl-a3"></i></a>
+
+                        <!-- dropdown -->
                         <div class="dropdown">
-                            <a href="#">Storie di clienti</a>
-                            <a href="#">Visualizza tutti</a>
+                            <ul>
+                                <li>
+                                    <a href="#">Patch e aggiornamenti</a>
+                                </li>
+                                <li>
+                                    <a href="#">Knowledgebase</a>
+                                </li>
+                            </ul>
                         </div>
+                        <!-- fine dropdown -->
                     </li>
 
                 </ul>
-                
+
             </div>
 
         </div>
-        <!-- fine jumbohead -->
+        <!-- fine jumbo nav -->
 
-        <!-- inizio jumbomain -->
-        <div id="jumbomain" class="clearfix">
-
-            <!-- jumbomain dragon -->
-            <div class="jumbo-dragon">
-                <img src="img/dragon.webp" alt="jumbo-dr">
-            </div>
-
-            <!-- jumbomain info -->
-            <div class="jumbo-info">
-                <h2>Novità di CorelDRAW Graphics Suite 2021</h2>
-                <h3>Software di progettazion grafica per Mac</h3>
-                <div class="try">
-                    <button class="btn-try">Prova gratis per 15 giorni <i class="fas fa-download"></i></button>
-                    <div class="stars"><img src="img/4-half-star.webp" alt="4half-str"></div>
-                    <span>(1020)</span>
-                </div>
-                <hr>
-                <div class="plans">
-                    <div class="pl-options clearfix"> 
-                        <span>Opzioni di acquisto</span>
-                        <span>Cerchi un upgrade?</span>
-                    </div>
-                    <div class="pl-btn">
-                        <button class="btn-plans"> 
-                            <span>Valore Ottimale</span>
-                            <br>
-                            <span>Piano Annuale</span>
-                        </button>
-                        <button class="btn-plans"> 
-                            <span>Acquisto in un unica soluzione</span>
-                        </button>
-                    </div>
-                    <p>Effettua la sottoscrizione a soli <span>€ 29,08/me</span>, ottieni l'ultima versione, strumenti di collaborazione e altro ancora!</p>
-                </div>
-                <div class="buy">
-
-                    <div class="buy-now">
-                        <p><span>&euro;349,00</span> /anno</p>
-                        <span>(IVA Incl.)</span>
-                        <button>Acquista ora</button>
-                        <a href="#" >Garanzia soddisfatti o rimborsati entro 30gg</a>
-                        <a href="#" >Rinnova la sottoscrizione</a>
-                        <a href="#" >Acquisti per una azienda di grandi dimensioni?</a>
-                    </div>
-                    <div class="divide"></div>
-                    <div class="buy-disclaimer">
-                        <a href="#"><span>Offerta a tempo limitato</span></a>
-                        <a href="#"><span>Sconto del 10%</span> sul tuo primo anno del piano annuale con un coupon <span>extra 10</span>+ <span>Gratis</span> Painter Essentials 8</a>
-                        <a href="#">Altre info</a>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-
-
-
+        <!-- jumbo main -->
 
     </div>
     

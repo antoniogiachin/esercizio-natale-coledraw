@@ -17,12 +17,14 @@
     border: 1px solid #a3a3a3;
 }
 
-a{
-    text-decoration: none;
+.flex-row{
+    display:flex;
+    flex-direction: row;
 }
 
-ul li{
-    list-style-type: none;
+.flex-col{
+    display: flex;
+    flex-direction: column;
 }
 
 /* colors */
@@ -41,6 +43,10 @@ ul li{
 
 .mg-btm-20{
     margin-bottom: 20px;
+}
+
+.mg-btm-10{
+    margin-bottom: 10px;
 }
 
 /* symbols */
@@ -66,168 +72,89 @@ ul li{
 }
 
 /* jumbotron */
-#jumbohead{
+#jumbotron{
+    width: 100%;
+    height: calc(100vh - 50px);
+    background-color: chartreuse;
+}
+
+    /* jumbo nav */
+#jumbotron .jumbo-nav{
+    height: 100px;
+    width: 100%;
     background-color: #000;
-    height: 120px;
-    position: relative;
+}
+
+#jumbotron .jumbo-nav .j-nav{
+    height: 50%;
+    width: 85%;
+    margin: auto;
 }
 
     /* jumbo nav top */
-#jumbohead .jumbo-nav.top{
+#jumbotron .jumbo-nav .j-nav.top ul{
+    list-style-type: none;
     font-size: 0.8em;
-    text-align: right;
-    padding: 8px 5px;
-    width: 70%;
-    margin: auto ;
+    justify-content: flex-end;
+    padding: 10px;
 }
 
-#jumbohead .jumbo-nav.top ul li{
-    display: inline-block;
-    margin: 0px 10px ;    
+#jumbotron .jumbo-nav .j-nav.top .fas{
+    margin-right: 10px;
+    color: #00f;
 }
 
-#jumbohead .jumbo-nav.top .phone::before {
-    font-family: "Font Awesome 5 Free";
-    content:"\f879";
-    font-size: 1.5em;
-    color: #009cff;
-    margin-right: 5px;
-}
-
-#jumbohead .jumbo-nav.top .chat::before {
-    font-family: "Font Awesome 5 Free";
-    content:"\f27a";
-    font-size: 1.5em;
-    color: #009cff;
-    margin-right: 5px;
-}
-
-#jumbohead .jumbo-nav.top .account::before {
-    font-family: "Font Awesome 5 Free";
-    content:"\f007";
-    font-size: 1.5em;
-    color: #009cff;
-    margin-right: 5px;
-}
-
-#jumbohead .jumbo-nav.top .shop::before {
-    font-family: "Font Awesome 5 Free";
-    content:"\f07a";
-    font-size: 1.5em;
-    color: #009cff;
-    margin-right: 5px;
+#jumbotron .jumbo-nav .j-nav.top ul li a{
+    text-decoration: none;
+    color: #a3a3a3;
+    margin: 10px;
 }
 
     /* jumbo nav bottom */
-
-#jumbohead .jumbo-nav.bottom{
-    width: 85%;
-    position: absolute;
-    bottom: 0;
-    left: 150px;
-}    
-
-#jumbohead .jumbo-nav.bottom ul {
-    display: flex;
-    align-items: center;
+#jumbotron .jumbo-nav .j-nav.btm ul{
+    list-style-type: none;
+    align-items: flex-end;  
+    height: 100%;  
 }
 
-#jumbohead .jumbo-nav.bottom ul li:not(:first-child) a{
-    display: block;
-    padding: 20px 30px;
+#jumbotron .jumbo-nav .j-nav.btm ul li a{
+    text-decoration: none;
     color: #fff;
-    background-color: #000;
+    margin: 0px 20px;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 0.8em;
 }
 
-#jumbohead .jumbo-nav.bottom .logo-jumbo{
-    margin-right: 15px;
+#jumbotron .jumbo-nav .j-nav.btm img{
+    width: 80%;
 }
 
-#jumbohead .jumbo-nav.bottom .dropdown{
+#jumbotron .jumbo-nav .dropdown{
+    background-color: #fff;
     position: absolute;
-    width: 300px;
+    width: 200px;
+    min-width: 200px;  
+    display: none;  
+}
+
+#jumbotron .jumbo-nav .dropdown li{
+    padding: 10px 0px;
+}
+
+#jumbotron .jumbo-nav .dropdown li a{
+    color: #000;
+}
+
+#jumbotron .jumbo-nav .dropright{
+    background-color: #fff;
+    width: 400px;
+    position: absolute;
+    left: 200px;
+    top: 0px;
     display: none;
 }
 
-#jumbohead .jumbo-nav.bottom .dropright{
-    position: absolute;
-    left: 300px;
-    width: 450px;
-    display: none;
+.dropright-ed{
+    margin: 0px 35px;
 }
-
-/* jumbomain */
-#jumbomain{
-    width: 100%;
-    height: calc(100vh - 170px);
-    background-color: #0D0B26;
-}
-
-    /* jumbomain dragon */
-#jumbomain .jumbo-dragon{
-    width: 50%;
-    float: left;
-    height: calc(100vh - 170px);
-}
-
-#jumbomain .jumbo-dragon img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: right;
-} 
-
-    /* jumbomain info */
-#jumbomain .jumbo-info{
-    color: #fff;
-    width: 50%;
-    height: calc(100vh - 170px);
-    float: left;
-    padding: 30px;
-} 
-
-#jumbomain .jumbo-info .try{
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-#jumbomain .jumbo-info .try .btn-try{
-    background-color: transparent;
-    padding: 8px 16px;
-    border: 2px solid #fff;
-    color: #fff;
-    text-transform: uppercase;
-    cursor: pointer;
-}
-
-#jumbomain .jumbo-info .try .stars{
-    width: 80px;
-}
-
-#jumbomain .jumbo-info .try .stars img{
-    width: 100%;
-}
-
-#jumbomain .jumbo-info .plans .pl-options span:nth-child(2){
-    float: right;
-}
-
-#jumbomain .jumbo-info .plans .pl-btn{
-    display: flex;
-    gap: 10px;
-}
-
-#jumbomain .jumbo-info .plans .btn-plans{
-    display: inline-block;
-    flex-basis: 50%;
-    padding: 20px;
-    display: inline-block;
-    cursor: pointer;
-}
-
-
-
-
-
-
