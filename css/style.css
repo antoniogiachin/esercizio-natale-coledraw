@@ -96,32 +96,3 @@ ul li{
 }
 
     /* jumbo nav bottom */
-#jumbohead .jumbo-nav.bottom{
-    width: 60%;
-    margin: auto;
-}  
-
-#jumbohead .jumbo-nav.bottom .dropdown{
-    position: relative;
-}
-
-#jumbohead .jumbo-nav.bottom .prdct-btn{
-    border: none;
-    cursor: pointer;
-    padding: 16px;
-}
-
-#jumbohead .jumbo-nav.bottom .dropdown-content{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    padding: 20px 16px;
-    background-color: #fff;
-    position: absolute;
-    width: 250px;
-}
-
-#jumbohead .jumbo-nav.bottom .dropdown-content .dropright{
-    position: absolute;
-    left: 250px;    
-}
