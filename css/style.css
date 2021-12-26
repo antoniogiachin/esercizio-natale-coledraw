@@ -5,3 +5,123 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+/* generali */
+a{
+    text-decoration: none;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+/* colors */
+.cl-a3{
+    color: #a3a3a3;
+}
+
+.cl-bk{
+    color: #000;
+}
+
+/* margins */
+.mg-btm-20{
+    margin-bottom: 20px;
+}
+
+/* banner */
+.banner{
+    background-color: #94122e;
+    text-align: center;
+    font-size: 0.9em;
+    font-weight: bold;
+    padding: 10px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.banner span{
+    text-decoration: underline;
+    color: #ffd580;
+}
+
+/* jumbotron */
+#jumbohead{
+    background-color: #000;
+}
+
+    /* jumbo nav top */
+#jumbohead .jumbo-nav.top{
+    font-size: 0.8em;
+    text-align: right;
+    padding: 8px 5px;
+    width: 60%;
+    margin: auto;
+}
+
+#jumbohead .jumbo-nav.top ul li{
+    display: inline-block;
+    margin: 0px 10px ;    
+}
+
+#jumbohead .jumbo-nav.top .phone::before {
+    font-family: "Font Awesome 5 Brands";
+    content:"\f095";
+    font-size: 1.5em;
+    color: #009cff;
+    margin-right: 5px;
+}
+
+#jumbohead .jumbo-nav.top .chat::before {
+    font-family: "Font Awesome 5 Brands";
+    content:"\f27a";
+    font-size: 1.5em;
+    color: #009cff;
+    margin-right: 5px;
+}
+
+#jumbohead .jumbo-nav.top .account::before {
+    font-family: "Font Awesome 5 Brands";
+    content:"\f007";
+    font-size: 1.5em;
+    color: #009cff;
+    margin-right: 5px;
+}
+
+#jumbohead .jumbo-nav.top .shop::before {
+    font-family: "Font Awesome 5 Brands";
+    content:"\f07a";
+    font-size: 1.5em;
+    color: #009cff;
+    margin-right: 5px;
+}
+
+    /* jumbo nav bottom */
+#jumbohead .jumbo-nav.bottom{
+    width: 60%;
+    margin: auto;
+}  
+
+#jumbohead .jumbo-nav.bottom .dropdown{
+    position: relative;
+}
+
+#jumbohead .jumbo-nav.bottom .prdct-btn{
+    border: none;
+    cursor: pointer;
+    padding: 16px;
+}
+
+#jumbohead .jumbo-nav.bottom .dropdown-content{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px 16px;
+    background-color: #fff;
+    position: absolute;
+    width: 250px;
+}
+
+#jumbohead .jumbo-nav.bottom .dropdown-content .dropright{
+    position: absolute;
+    left: 250px;    
+}
