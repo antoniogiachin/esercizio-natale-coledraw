@@ -226,3 +226,7 @@ a{
     cursor: pointer;   
 }
 
+    /* jumbomain info buy */
+#jumbotron .jinfo-buy > div{
+    width: 50%;
+}    
