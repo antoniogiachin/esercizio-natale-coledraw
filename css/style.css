@@ -60,6 +60,10 @@ a{
     margin-bottom: 50px;
 }
 
+.mg-btm-30{
+    margin-bottom: 30px;
+}
+
 .mg-btm-20{
     margin-bottom: 20px;
 }
@@ -68,11 +72,21 @@ a{
     margin-bottom: 10px;
 }
 
+.mg-btm-5{
+    margin-bottom: 5px;
+}
+
 /* symbols */
 .arrowhead{
     font-size: 1.2em;
     color: #a3a3a3;
 }
+
+/* font-size */
+.fsize-2{
+    font-size: 2em;
+}
+
 /* banner */
 .banner{
     background-color: #94122e;
@@ -199,14 +213,29 @@ a{
     object-position: right;
 }
 
+    /* jumbomain info */
+#jumbotron .jumbomain .jmain-info{
+    padding: 30px 50px;
+}
+
     /* jumbomain info try */
 #jumbotron .jumbomain .jinfo-try{
     border-bottom: 1px solid #a3a3a3;
+    line-height: 40px;
 }
 
 #jumbotron .jmain-info .jinfo-try .try-btn{
     align-items: center;
     gap: 20px;
+}
+
+#jumbotron .jmain-info .jinfo-try .try-btn button{
+    padding: 8px 16px;
+    background-color: transparent;
+    color: white;
+    text-transform: uppercase;
+    border: 2px solid #fff;
+    cursor: pointer;
 }
 
 #jumbotron .jmain-info .jinfo-try .try-btn img{
@@ -220,13 +249,39 @@ a{
     padding: 20px;
     height: 100px;
     display: inline-block;
-    border: 2px solid #a3a3a3;
+    border: 1px solid #a3a3a3;
     border-radius: 5px;
     background-color: transparent; 
     cursor: pointer;   
 }
 
+#jumbotron .jinfo-plans .jplans-btn button:first-child{
+    background-color: #213942;
+    border: 2px solid #039CFF ;
+}
+
     /* jumbomain info buy */
 #jumbotron .jinfo-buy > div{
     width: 50%;
-}    
+}
+
+#jumbotron .jinfo-buy .left-buy button{
+    padding: 8px 20px;
+    background-color: #039CFF;
+    border: none;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    color: #fff;
+}
+
+#jumbotron .jinfo-buy .right-buy{
+    padding: 30px;
+}
+#jumbotron .jinfo-buy .right-buy button{
+    background-color: transparent;
+    border: none;
+    border-left: 1px solid #a3a3a3;
+    text-align: left;
+    cursor: pointer;
+    padding: 10px;
+}
