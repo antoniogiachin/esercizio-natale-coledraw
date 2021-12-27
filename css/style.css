@@ -6,6 +6,18 @@
 }
 
 /* generali */
+a{
+    text-decoration: none;
+}
+
+.fl-left{
+    float: left;
+}
+
+.fl-right{
+    float: right;
+}
+
 .clearfix::after{
     display: table;
     content: "";
@@ -36,6 +48,13 @@
     color: #000;
 }
 
+.cl-wh{
+    color: #fff;
+}
+
+.cl-cy{
+    color: #039CFF;
+}
 /* margins */
 .mg-btm-50{
     margin-bottom: 50px;
@@ -75,7 +94,6 @@
 #jumbotron{
     width: 100%;
     height: calc(100vh - 50px);
-    background-color: chartreuse;
 }
 
     /* jumbo nav */
@@ -158,3 +176,53 @@
 .dropright-ed{
     margin: 0px 35px;
 }
+
+    /* jumbomain */
+#jumbotron .jumbomain{
+    background-color: #0D0B25;
+    width: 100%;
+    height: calc(100% - 100px);
+}
+
+#jumbotron .jumbomain > div{
+    width: 50%;
+    height: 100%;
+    float: left;
+    border: 1px solid white;
+}
+
+    /* jumbomain img */
+#jumbotron .jumbomain .jmain-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: right;
+}
+
+    /* jumbomain info try */
+#jumbotron .jumbomain .jinfo-try{
+    border-bottom: 1px solid #a3a3a3;
+}
+
+#jumbotron .jmain-info .jinfo-try .try-btn{
+    align-items: center;
+    gap: 20px;
+}
+
+#jumbotron .jmain-info .jinfo-try .try-btn img{
+    width: 10%;
+    height: 10%;
+}
+
+    /* jumbomain info plans */
+#jumbotron .jinfo-plans .jplans-btn button{
+    width: calc(100% / 2 - 5px);
+    padding: 20px;
+    height: 100px;
+    display: inline-block;
+    border: 2px solid #a3a3a3;
+    border-radius: 5px;
+    background-color: transparent; 
+    cursor: pointer;   
+}
+
