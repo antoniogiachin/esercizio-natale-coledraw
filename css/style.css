@@ -39,6 +39,11 @@ a{
     flex-direction: column;
 }
 
+/* background */
+.bg-cy{
+    background-color: #039CFF;
+}
+
 /* colors */
 .cl-a3{
     color: #a3a3a3;
@@ -200,8 +205,8 @@ a{
     /* jumbo nav bottom */
 #jumbotron .jumbo-nav .j-nav.btm ul{
     list-style-type: none;
-    align-items: flex-end;  
-    height: 100%;  
+    align-items: flex-end;
+    height: 100%;
 }
 
 #jumbotron .jumbo-nav .j-nav.btm ul li a{
@@ -221,8 +226,8 @@ a{
     background-color: #fff;
     position: absolute;
     width: 200px;
-    min-width: 200px;  
-    display: none;  
+    min-width: 200px;
+    display: none;
 }
 
 #jumbotron .jumbo-nav .dropdown li{
@@ -305,8 +310,8 @@ a{
     display: inline-block;
     border: 1px solid #a3a3a3;
     border-radius: 5px;
-    background-color: transparent; 
-    cursor: pointer;   
+    background-color: transparent;
+    cursor: pointer;
 }
 
 #jumbotron .jinfo-plans .jplans-btn button:first-child{
@@ -341,3 +346,43 @@ a{
     cursor: pointer;
     padding: 10px;
 }
+
+/* header */
+header{
+    height: 80px;
+    background-color: #e6e6e6;
+}
+
+    /* header nav */
+header .nav-container {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    line-height: 80px;
+}
+
+header nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0px 5px;
+}
+
+ header nav ul li a{
+    padding: 20px 10px;
+    color: #000;
+    font-size: 1.5em;
+    border-bottom: 3px solid transparent;
+}
+
+ header nav ul li:first-child a{
+    border-bottom: 3px solid black;
+}
+
+    /* header button */
+header button{
+    display: inline-block;
+    height: 100%;
+    border: none;
+    padding: 0px 30px;
+}
+
