@@ -44,6 +44,10 @@ a{
     background-color: #039CFF;
 }
 
+.bg-gr{
+    background-color: #959595;
+}
+
 /* colors */
 .cl-a3{
     color: #a3a3a3;
@@ -469,8 +473,11 @@ main .astronaut-img .far.fa-play-circle{
 }
 
 /* main second */
-#second h2, #second p{
+#second{
     text-align: center;
+}
+
+#second h2, #second p{
     padding: 20px;
 }
 
@@ -484,3 +491,20 @@ main .astronaut-img .far.fa-play-circle{
 #second .tool img{
     width: 50%;
 }
+
+#second .second-img{
+    border: 40px solid #000;
+    border-radius: 20px;
+}
+
+#second .second-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#second button{
+    border:none;
+    padding: 5px 20px;
+}
+
