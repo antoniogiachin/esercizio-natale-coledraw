@@ -351,6 +351,14 @@ a{
     padding: 10px;
 }
 
+/* main */
+
+.section-container{
+    width: 85%;
+    margin: auto;
+    justify-content: space-between;
+}
+
 /* header */
 header{
     height: 80px;
@@ -439,6 +447,7 @@ main .astronaut-img .far.fa-play-circle{
     border-radius: 50%;
 }
 
+
 /* main first */
 #first{
     width: 100%;
@@ -446,11 +455,6 @@ main .astronaut-img .far.fa-play-circle{
     padding: 40px;
 }
 
-#first .section-container{
-    width: 85%;
-    margin: auto;
-    justify-content: space-between;
-}
 
 #first .section-container > div{
     width: calc(100% / 3 - 10px);
@@ -462,4 +466,21 @@ main .astronaut-img .far.fa-play-circle{
 
 #first .section-container > div img{
     width: 40%;
+}
+
+/* main second */
+#second h2, #second p{
+    text-align: center;
+    padding: 20px;
+}
+
+#second .row-tool{
+    justify-content: space-between;
+}
+#second .tool{
+    align-items: center;
+}
+
+#second .tool img{
+    width: 50%;
 }
