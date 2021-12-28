@@ -55,6 +55,10 @@ a{
 .cl-cy{
     color: #039CFF;
 }
+
+.cl-mg{
+    color: #E51A7C;
+}
 /* margins */
 .mg-btm-50{
     margin-bottom: 50px;
@@ -87,16 +91,66 @@ a{
     font-size: 2em;
 }
 
+.fsize-1-5{
+    font-size: 1.5em;
+}
+
+.fsize-1-2{
+    font-size: 1.2em;
+}
+
+.fsize-1-1{
+    font-size: 1.1em;
+}
+
+/* font-weight */
+.fw-bold{
+    font-weight: bold;
+}
+
+.fw-400{
+    font-weight: 400;
+}
+
+.fw-600{
+    font-weight: 600;
+}
+
+.fw-300{
+    font-weight: 300;
+}
+
+/* text */
+.txt-uc{
+    text-transform: uppercase;
+}
+
+.txt-ul{
+    text-decoration: underline;
+}
+
+/* italic */
+.fs-italic{
+    font-style: italic;
+}
+
 /* banner */
 .banner{
-    background-color: #94122e;
     text-align: center;
     font-size: 0.8em;
     font-weight: 400;
-    text-transform: uppercase;
-    color: #fff;
     height: 50px;
     line-height: 50px;
+}
+
+.banner.bnr-top{
+    background-color: #94122e;
+    color: #fff;
+}
+
+.banner.bnr-btm{
+    background-color: #32C999;
+    color: #000;
 }
 
 .banner span{
@@ -108,6 +162,7 @@ a{
 #jumbotron{
     width: 100%;
     height: calc(100vh - 50px);
+    font-weight: 300;
 }
 
     /* jumbo nav */
@@ -202,7 +257,6 @@ a{
     width: 50%;
     height: 100%;
     float: left;
-    border: 1px solid white;
 }
 
     /* jumbomain img */
@@ -272,11 +326,13 @@ a{
     text-transform: uppercase;
     font-size: 1.2em;
     color: #fff;
+    cursor: pointer;
 }
 
 #jumbotron .jinfo-buy .right-buy{
-    padding: 30px;
+    padding: 20px;
 }
+
 #jumbotron .jinfo-buy .right-buy button{
     background-color: transparent;
     border: none;
