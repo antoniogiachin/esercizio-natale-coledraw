@@ -491,6 +491,8 @@ main .astronaut-img .far.fa-play-circle{
 #second .tool{
     align-items: center;
     position: relative;
+    color: black;
+    padding: 10px;
 }
 
 #second .tool:first-child::after{
@@ -519,4 +521,5 @@ main .astronaut-img .far.fa-play-circle{
 #second button{
     border:none;
     padding: 15px;
+    cursor: pointer;
 }
