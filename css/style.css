@@ -475,6 +475,8 @@ main .astronaut-img .far.fa-play-circle{
 /* main second */
 #second{
     text-align: center;
+    padding: 50px 20px;
+    background-color: #efefef;
 }
 
 #second h2, #second p{
@@ -483,9 +485,20 @@ main .astronaut-img .far.fa-play-circle{
 
 #second .row-tool{
     justify-content: space-between;
+    border-bottom: 1px solid #a3a3a3;
 }
+
 #second .tool{
     align-items: center;
+    position: relative;
+}
+
+#second .tool:first-child::after{
+    content: "";
+    width: 100%;
+    border: 3px solid green;
+    position: absolute;
+    bottom: -4px;
 }
 
 #second .tool img{
@@ -493,7 +506,7 @@ main .astronaut-img .far.fa-play-circle{
 }
 
 #second .second-img{
-    border: 40px solid #000;
+    border: 20px solid #000;
     border-radius: 20px;
 }
 
@@ -505,6 +518,5 @@ main .astronaut-img .far.fa-play-circle{
 
 #second button{
     border:none;
-    padding: 5px 20px;
+    padding: 15px;
 }
-
