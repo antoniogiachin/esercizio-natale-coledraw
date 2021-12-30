@@ -564,13 +564,14 @@ main .astronaut-img .far.fa-play-circle{
     text-align: center;
 }
 
-#fourth .fourth-row{
+#fourth .fourth-row, #six .six-row{
     flex-wrap: wrap;
 }
 
-#fourth .fourth-row .fourth-img{
+#fourth .fourth-row .fourth-img, #six .six-row .six-img{
     width: calc(100% / 4);
     padding: 20px;
+    text-align: center;
 }
 
 #fourth .fourth-img img{
@@ -603,4 +604,21 @@ main .astronaut-img .far.fa-play-circle{
 
 #fifth img{
     width: 50%;
+}
+
+/* six */
+#six .section-container{
+    padding: 80px 0px ;
+}
+
+#six .six-txt{
+    text-align: center;
+}
+
+#six .six-img img{
+    width: 40%;
+}
+
+#six p{
+    padding: 10px 60px;
 }
