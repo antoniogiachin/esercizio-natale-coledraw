@@ -576,3 +576,31 @@ main .astronaut-img .far.fa-play-circle{
 #fourth .fourth-img img{
     width: 80%;
 }
+
+/* fifth */
+#fifth{
+    width: 100%;
+    background-color: #F99633;
+    text-align: center;
+}
+
+#fifth .section-container{
+    align-items: center;
+    padding: 80px;
+    gap: 30px;
+}
+
+#fifth .fas{
+    margin: 0px 30px;
+}
+
+#fifth button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+}
+
+#fifth img{
+    width: 50%;
+}
