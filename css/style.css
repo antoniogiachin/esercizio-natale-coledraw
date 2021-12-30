@@ -558,3 +558,21 @@ main .astronaut-img .far.fa-play-circle{
 #third .third-txt p{
     display: none;
 }
+
+/* fourth */
+#fourth {
+    text-align: center;
+}
+
+#fourth .fourth-row{
+    flex-wrap: wrap;
+}
+
+#fourth .fourth-row .fourth-img{
+    width: calc(100% / 4);
+    padding: 20px;
+}
+
+#fourth .fourth-img img{
+    width: 80%;
+}
