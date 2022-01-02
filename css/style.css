@@ -174,7 +174,6 @@ a{
 /* jumbotron */
 #jumbotron{
     width: 100%;
-    height: calc(100vh - 50px);
     font-weight: 300;
 }
 
@@ -259,18 +258,19 @@ a{
     margin: 0px 35px;
 }
 
+
     /* jumbomain */
 #jumbotron .jumbomain{
     background-color: #0D0B25;
     width: 100%;
-    height: calc(100% - 100px);
+
 }
 
 #jumbotron .jumbomain > div{
     width: 50%;
-    height: 100%;
-    float: left;
 }
+
+
 
     /* jumbomain img */
 #jumbotron .jumbomain .jmain-img img{
@@ -370,6 +370,7 @@ header{
     top: 0;
     position: sticky;
     z-index: 999;
+    overflow: hidden;
 }
 
     /* header nav */
@@ -394,7 +395,7 @@ header nav ul li{
 }
 
  header nav ul li:first-child a{
-    border-bottom: 3px solid black;
+    border-bottom: 4px solid black;
 }
 
     /* header button */
@@ -507,7 +508,7 @@ main .astronaut-img .far.fa-play-circle{
 }
 
 #second .second-img{
-    border: 20px solid #000;
+    border: 30px solid #000;
     border-radius: 20px;
 }
 
@@ -621,4 +622,21 @@ main .astronaut-img .far.fa-play-circle{
 
 #six p{
     padding: 10px 60px;
+}
+
+/* hover */
+
+    /* jumbotron nav */
+#jumbotron .jumbo-nav .j-nav.top  ul li:hover a{
+    text-decoration: underline;
+    color: #fff;
+}
+
+#jumbotron .jumbo-nav .j-nav.btm ul li:hover{
+    background-color: #fff;
+    color: #222;
+}
+
+#jumbotron .jumbo-nav .j-nav.btm .drop:hover .dropdown{
+    display: block;
 }
