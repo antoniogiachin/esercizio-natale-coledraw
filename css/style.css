@@ -418,9 +418,8 @@ hr{
 
 /* header */
 header{
-    height: 80px;
     background-color: #e6e6e6;
-    width: 100%;
+    padding: 0px 0px 0px 10px;
     top: 0;
     position: sticky;
     z-index: 999;
@@ -428,37 +427,34 @@ header{
 }
 
     /* header nav */
-header .nav-container {
-    width: 80%;
-    height: 100%;
-    margin: auto;
-    line-height: 80px;
-}
-
-header nav ul li{
+header nav ul {
     list-style-type: none;
-    display: inline-block;
-    margin: 0px 5px;
 }
 
- header nav ul li a{
-    padding: 20px 10px;
-    color: #000;
-    font-size: 1.5em;
+header nav ul li:nth-child(1) a{
+    border-bottom: 3px  solid black;
+}
+
+header nav ul li a{
     border-bottom: 3px solid transparent;
 }
 
- header nav ul li:first-child a{
-    border-bottom: 4px solid black;
+header nav ul li a{
+    display: inline-block;
+    padding: 25px;
+    font-size: 1.5em;
 }
 
     /* header button */
 header button{
     display: inline-block;
-    height: 100%;
+    padding: 25px;
+    font-size: 1.5em;
     border: none;
-    padding: 0px 30px;
+    border-bottom: 3px solid #039CFF;
 }
+
+
 
 /* main astronaut */
 main #astronaut{
@@ -677,4 +673,3 @@ main .astronaut-img .far.fa-play-circle{
 #six p{
     padding: 10px 60px;
 }
-
