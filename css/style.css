@@ -634,9 +634,22 @@ main .astronaut-img .far.fa-play-circle{
 
 #jumbotron .jumbo-nav .j-nav.btm ul li:hover{
     background-color: #fff;
+}
+
+#jumbotron .jumbo-nav .j-nav.btm ul li:hover a{
+    color:#222
+}
+
+#jumbotron .jumbo-nav .j-nav.btm .dropdown ul li a{
     color: #222;
 }
 
-#jumbotron .jumbo-nav .j-nav.btm .drop:hover .dropdown{
+#jumbotron .jumbo-nav .j-nav.btm .dropright hr{
+    border: 0.2px solid #ccc;
+}
+
+#jumbotron .jumbo-nav .j-nav.btm .drop:hover  .dropdown, #jumbotron .jumbo-nav .j-nav.btm .drops:hover .dropright{
     display: block;
 }
+
+#jumbotron .jumbo-nav .j-nav.btm
