@@ -39,6 +39,14 @@ a{
     flex-direction: column;
 }
 
+.align-center{
+    align-items: center;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
 /* background */
 .bg-cy{
     background-color: #039CFF;
@@ -177,89 +185,135 @@ a{
     font-weight: 300;
 }
 
-    /* jumbo nav */
-#jumbotron .jumbo-nav{
-    height: 100px;
-    width: 100%;
+/* j-nav */
+.jnav{
+    font-weight: 400;
+}
+
+    /* j-nav top */
+.jnav.top{
     background-color: #000;
+    height: 50px;
 }
 
-#jumbotron .jumbo-nav .j-nav{
-    height: 50%;
-    width: 85%;
-    margin: auto;
+.jnav.top .fas{
+    margin:0px 10px;
 }
 
-    /* jumbo nav top */
-#jumbotron .jumbo-nav .j-nav.top ul{
-    list-style-type: none;
-    font-size: 0.8em;
-    justify-content: flex-end;
-    padding: 10px;
-}
-
-#jumbotron .jumbo-nav .j-nav.top .fas{
-    margin-right: 10px;
-    color: #00f;
-}
-
-#jumbotron .jumbo-nav .j-nav.top ul li a{
-    text-decoration: none;
-    color: #a3a3a3;
-    margin: 10px;
-}
-
-    /* jumbo nav bottom */
-#jumbotron .jumbo-nav .j-nav.btm ul{
-    list-style-type: none;
-    align-items: flex-end;
+.jnav.top ul{
     height: 100%;
+    justify-content: flex-end;
+    margin-right: 30px;
+    list-style-type: none;
 }
 
-#jumbotron .jumbo-nav .j-nav.btm ul li a{
-    text-decoration: none;
+.jnav.top ul li{
+    margin:0px 10px;
+}
+
+.jnav.top ul select{
+    margin-left: 20px;
+}
+
+    /* j-nav top hover */
+.jnav.top ul li:hover a{
+    text-decoration: underline;
     color: #fff;
-    margin: 0px 20px;
+}
+
+
+    /* j-nav bottom */
+
+.jnav.btm{
+    background-color: #000;
+    gap: 50px;
+    padding-left: 30px;
+}
+
+.jnav.btm ul{
+    list-style-type: none;
+    gap: 15px;
+}
+
+.jnav.btm ul li a{
+    padding: 28px 18px;
     display: inline-block;
-    padding: 10px 20px;
-    font-size: 0.8em;
+    font-size: 1.2em;
 }
 
-#jumbotron .jumbo-nav .j-nav.btm img{
-    width: 80%;
+.jnav.btm .logo{
+    display: inline-block;
 }
 
-#jumbotron .jumbo-nav .dropdown{
-    background-color: #fff;
+    /* dropdown */
+.dropdown{
     position: absolute;
-    width: 200px;
-    min-width: 200px;
+    background-color: #fff;
+    width: 300px;
+    min-width: 300px;
     display: none;
 }
 
-#jumbotron .jumbo-nav .dropdown li{
-    padding: 10px 0px;
+.dropdown li:hover{
+    background-color: #e6e6e6;
 }
 
-#jumbotron .jumbo-nav .dropdown li a{
+.dropdown ul li{
+    justify-content: space-between;
+    padding-right: 10px;
+}
+
+    /* dropright */
+.dropright{
+    width: 650px;
+    min-width: 650px;
+    position: absolute;
+    left: 300px;
+    top: 0;
+    background-color: #e6e6e6;
+    display: none;
+}
+
+.dropright li:hover{
+    background-color: #a3a3a3;
+}
+
+.dropright span{
+    padding: 18px;
+    display: inline-block;
+}
+
+hr{
+    border-top: 0.2px solid #a3a3a3;
+}
+
+.dropright.scn{
+    top:82px;
+}
+
+.dropright.trd{
+    top: 165px;
+}
+
+    /* j-nav btm hover */
+.jnav.btm > ul > li:hover{
+    background-color: #fff;
+}
+
+.jnav.btm > ul > li:hover a{
     color: #000;
 }
 
-#jumbotron .jumbo-nav .dropright{
-    background-color: #fff;
-    width: 400px;
-    position: absolute;
-    left: 200px;
-    top: 0px;
-    display: none;
+.jnav.btm > ul > .drop:hover .dropdown{
+    display: block;
 }
 
-.dropright-ed{
-    margin: 0px 35px;
+.jnav.btm .drop .drops:hover .dropright{
+    display: block;
 }
 
 
-    /* jumbomain */
+/* jumbomain */
 #jumbotron .jumbomain{
     background-color: #0D0B25;
     width: 100%;
@@ -624,32 +678,3 @@ main .astronaut-img .far.fa-play-circle{
     padding: 10px 60px;
 }
 
-/* hover */
-
-    /* jumbotron nav */
-#jumbotron .jumbo-nav .j-nav.top  ul li:hover a{
-    text-decoration: underline;
-    color: #fff;
-}
-
-#jumbotron .jumbo-nav .j-nav.btm ul li:hover{
-    background-color: #fff;
-}
-
-#jumbotron .jumbo-nav .j-nav.btm ul li:hover a{
-    color:#222
-}
-
-#jumbotron .jumbo-nav .j-nav.btm .dropdown ul li a{
-    color: #222;
-}
-
-#jumbotron .jumbo-nav .j-nav.btm .dropright hr{
-    border: 0.2px solid #ccc;
-}
-
-#jumbotron .jumbo-nav .j-nav.btm .drop:hover  .dropdown, #jumbotron .jumbo-nav .j-nav.btm .drops:hover .dropright{
-    display: block;
-}
-
-#jumbotron .jumbo-nav .j-nav.btm
