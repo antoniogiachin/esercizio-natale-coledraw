@@ -454,7 +454,14 @@ header button{
     border-bottom: 3px solid #039CFF;
 }
 
+/* header hover  */
+header nav ul li a:hover{
+    background-color: #eee;
+}
 
+header button:hover{
+    filter: opacity(0.8);
+}
 
 /* main astronaut */
 main #astronaut{
@@ -499,8 +506,13 @@ main .astronaut-img .far.fa-play-circle{
     opacity: 0.5;
     background-color: #0D0B25;
     border-radius: 50%;
+    transition: all 0.5s;
 }
 
+    /* first hover  */
+main .astronaut-img .far.fa-play-circle:hover{
+    font-size: 18em;
+}
 
 /* main first */
 #first{
@@ -609,6 +621,12 @@ main .astronaut-img .far.fa-play-circle{
 
 #third .third-txt p{
     display: none;
+    padding: 20px;
+}
+
+    /* third hover */
+#third .third-txt .txt-drop:hover + p{
+    display: block;
 }
 
 /* fourth */
