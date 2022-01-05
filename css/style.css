@@ -753,6 +753,10 @@ main .astronaut-img .far.fa-play-circle:hover{
     padding: 10px 60px;
 }
 
+.overlay{
+    display: none;
+}
+
 /* 767 primo step */
 /* 500 secondo step */
 @media  screen and (max-width:767px) {
@@ -762,7 +766,11 @@ main .astronaut-img .far.fa-play-circle:hover{
         font-size: 0.6em;
         overflow: hidden;
     }
-    
+
+    .banner.bnr-btm{
+        font-size: 0.4em;
+    }
+
     /* jumbotron nav */
     #jumbotron .jnav.top{
         display: none;
@@ -778,11 +786,69 @@ main .astronaut-img .far.fa-play-circle:hover{
     }
 
     #jumbotron .jnav.btm .logo{
-        padding: 30px;
+        padding: 15px;
+    }
+
+    #jumbotron .jnav.btm .logo img{
         vertical-align: middle;
+        width: 50%;
     }
 
     #jumbotron .jnav.btm .hamburger{
         display: block;
+    }
+
+    /* jumbomain  */
+    #jumbotron .jumbomain{
+        flex-direction: column;
+    }
+
+    #jumbotron .jumbomain > div{
+        width: 100%;
+        background-image: url(../img/dragon.webp);
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: relative;
+    }
+
+    #jumbotron .jumbomain .jmain-info{
+        padding: 30px 20px;
+
+    }
+
+    #jumbotron .jumbomain .jmain-img{
+        display: none;
+    }
+
+    #jumbotron .overlay{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #000;
+        display: block;
+        filter: opacity(0.4);
+    }
+
+    #jumbotron .jinfo-try, #jumbotron .jinfo-plans, #jumbotron .jinfo-buy{
+        position: relative;
+    }
+
+    #jumbotron .jinfo-try .try-btn{
+        margin-bottom: 15px;
+    }
+
+    #jumbotron .jinfo-try .try-btn button{
+        font-size: 0.9em;
+    }
+
+    #jumbotron .jinfo-plans .jplans-opt > a{
+        color: #fff;
+    }
+
+    #jumbotron .jinfo-plans .jplans-btn button:nth-child(2){
+        background-color: rgba(0,0,0,0.2);
+        color: white;
     }
 }
