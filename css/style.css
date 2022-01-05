@@ -250,6 +250,10 @@ a{
     font-size: 1.2em;
 }
 
+.jnav.btm .hamburger{
+    display: none;
+}
+
 .jnav.btm .logo{
     display: inline-block;
 }
@@ -751,3 +755,34 @@ main .astronaut-img .far.fa-play-circle:hover{
 
 /* 767 primo step */
 /* 500 secondo step */
+@media  screen and (max-width:767px) {
+
+    /* banner */
+    .banner{
+        font-size: 0.6em;
+        overflow: hidden;
+    }
+    
+    /* jumbotron nav */
+    #jumbotron .jnav.top{
+        display: none;
+    }
+
+    #jumbotron .jnav.btm{
+        justify-content: space-around;
+        padding-left: 0;
+    }
+
+    #jumbotron .jnav.btm ul{
+        display: none;
+    }
+
+    #jumbotron .jnav.btm .logo{
+        padding: 30px;
+        vertical-align: middle;
+    }
+
+    #jumbotron .jnav.btm .hamburger{
+        display: block;
+    }
+}
