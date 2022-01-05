@@ -467,6 +467,11 @@ header{
     overflow: hidden;
 }
 
+    /* header media */
+#header-media{
+    display: none;
+}
+
     /* header nav */
 header nav ul {
     list-style-type: none;
@@ -507,8 +512,6 @@ header button:hover{
 /* main astronaut */
 main #astronaut{
     width: 100%;
-    height: 1300px;
-    min-height: 1000px;
     background-color: #BD5651;
     font-weight: 300;
 }
@@ -521,7 +524,6 @@ main .boh{
 main .astronaut-txt{
     padding: 80px 60px;
     text-align: center;
-    height: 30%;
     width: 60%;
     margin: auto;
 }
@@ -757,6 +759,8 @@ main .astronaut-img .far.fa-play-circle:hover{
     display: none;
 }
 
+
+
 /* 767 primo step */
 /* 500 secondo step */
 @media  screen and (max-width:767px) {
@@ -850,5 +854,79 @@ main .astronaut-img .far.fa-play-circle:hover{
     #jumbotron .jinfo-plans .jplans-btn button:nth-child(2){
         background-color: rgba(0,0,0,0.2);
         color: white;
+    }
+
+    /* header */
+    header{
+        overflow: visible;
+        padding: 0;
+        font-size: 0.8em;
+    }
+
+    header nav{
+        display: none;
+    }
+
+    header button{
+        display: none;
+    }
+
+    header #header-media{
+        display: block;
+    }
+
+    header #header-media > a{
+        padding: 20px;
+        display: inline-block;
+        width: 100%;
+    }
+
+    header #header-media:hover .media-dropdown{
+        display: block;
+    }
+
+    header #header-media .media-dropdown{
+        position: absolute;
+        width: 100%;
+        background-color: #e6e6e6;
+        display: none;
+    }
+
+    header #header-media .media-dropdown ul li{
+        list-style-type: none;
+        padding: 15px;
+    }
+
+    header #header-media .media-dropdown ul li:hover{
+        background-color: white;
+    }
+
+    /* main astronaut */
+    main #astronaut .astronaut-txt{
+        padding: 30px 0px;
+        width: 95%;
+    }
+
+    main #astronaut .astronaut-txt .boh{
+        display: none;
+    }
+
+    main #astronaut .astronaut-txt h2{
+        font-size: 1.5em;
+        font-weight: 600;
+    }
+
+    main #astronaut .astronaut-txt p{
+        font-size: 1em;
+        font-weight: 600;
+    }
+
+    main .astronaut-img .far.fa-play-circle{
+        font-size: 5em;
+        transition: all 0.5s;
+    }
+
+    main .astronaut-img .far.fa-play-circle:hover{
+        font-size: 6em;
     }
 }
