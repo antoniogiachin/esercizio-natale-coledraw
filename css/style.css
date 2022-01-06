@@ -635,6 +635,10 @@ main .astronaut-img .far.fa-play-circle:hover{
     cursor: pointer;
 }
 
+main #second .second-media-row{
+    display: none;
+}
+
     /* second hover */
 #second .tool:not(:first-child):hover span{
     color: #000;
@@ -679,6 +683,10 @@ main .astronaut-img .far.fa-play-circle:hover{
 #third .third-txt p{
     display: none;
     padding: 20px;
+}
+
+main #third .media-third-img{
+    display: none;
 }
 
     /* third hover */
@@ -861,6 +869,7 @@ main .astronaut-img .far.fa-play-circle:hover{
         overflow: visible;
         padding: 0;
         font-size: 0.8em;
+        position: relative;
     }
 
     header nav{
@@ -928,5 +937,157 @@ main .astronaut-img .far.fa-play-circle:hover{
 
     main .astronaut-img .far.fa-play-circle:hover{
         font-size: 6em;
+    }
+
+    /* main first */
+    main #first{
+        padding: 20px;
+    }
+
+    main #first .section-container{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    main #first .section-container > div{
+        flex-direction: row;
+        gap: 60px;
+        width: 100%;
+    }
+
+    main #first .section-container > div > img{
+        width: 15%;
+    }
+
+    main #first .section-container > div > h3{
+        display: none;
+    }
+
+    main #first .section-container > div > p{
+        width: 70%;
+        font-size: 1em;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    main #first .section-container > div > p::before{
+        font-size: 1.2em;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    main #first .section-container .project p::before{
+        content: "Progetta";
+    }
+
+    main #first .section-container .collab p::before{
+        content: "Collabora";
+    }
+
+    main #first .section-container .done p::before{
+        content: "Fatto";
+    }
+
+    /* main second */
+    main #second{
+        padding: 30px 10px 5px;
+    }
+    main #second .section-container{
+        width: 95%;
+        margin: auto;
+    }
+
+    main #second h2{
+        padding: 0;
+        font-size: 1.5em;
+        font-weight: 400;
+    }
+
+    main #second .row-tool{
+        display: none;
+    }
+
+    main #second .section-container > p{
+        display: none;
+    }
+
+    main #second .second-img{
+        border: none;
+    }
+
+    main #second .second-img img{
+        width: 100%;
+        height: 80%;
+        transform: scale(1);
+    }
+
+    main #second .second-img.mg-btm-50{
+        display: none;
+    }
+
+    main #second .second-media-row{
+        padding: 30px 0px 10px;
+        display: block;
+    }
+
+    main #second .second-media-row li{
+        list-style-type: none;
+    }
+
+    main #second .second-media-row li a{
+        align-items: flex-start;
+    }
+
+    main #second .second-media-row li a:hover span{
+        text-decoration: underline;
+    }
+
+    main #second .second-media-row .media-img{
+        align-items: center;
+    }
+
+    main #second .second-media-row .media-img img{
+        width: 40px;
+        height: 40px;
+    }
+
+    main #second .second-media-row .media-img span{
+        margin-left: 20px;
+    }
+
+    main #second .second-media-row li p{
+        text-align: left;
+        padding: 20px 0px;
+    }
+
+    /* main third */
+    main #third .section-container{
+        background-image: none;
+        padding: 0;
+    }
+
+    main #third .media-third-img{
+        display: flex;
+        justify-content: right;
+    }
+
+    main #third .media-third-img img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    main #third .third-txt{
+        width: 100%;
+        padding: 20px 10px;
+    }
+
+    main #third .third-txt h3{
+        font-size: 2em;
+    }
+
+    main #third .third-txt p{
+        padding: 0;
     }
 }
