@@ -782,7 +782,7 @@ main #third .media-third-img{
         gap: 0px;
     }
 
-    .jnav.btm:hover .query-drop{
+    .jnav.btm:active .query-drop{
         display: block;
     }
 
@@ -808,7 +808,7 @@ main #third .media-third-img{
         margin-left: 5px;
     }
 
-    .query-drop .hover-drop:hover .query-drops{
+    .query-drop .hover-drop:active .query-drops{
         display: block;
     }
 
@@ -829,7 +829,7 @@ main #third .media-third-img{
         text-decoration: underline;
     }
 
-    .query-drop .query-drops .hover-drops:hover .query-dropped{
+    .query-drop .query-drops .hover-drops:active .query-dropped{
         display: block;
     }
 
