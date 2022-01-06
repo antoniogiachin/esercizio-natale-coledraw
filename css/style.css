@@ -767,11 +767,108 @@ main #third .media-third-img{
     display: none;
 }
 
+.query-drop{
+    display: none;
+}
+
 
 
 /* 767 primo step */
 /* 500 secondo step */
 @media  screen and (max-width:767px) {
+
+    .jnav.btm{
+        flex-wrap: wrap;
+        gap: 0px;
+    }
+
+    .jnav.btm:hover .query-drop{
+        display: block;
+    }
+
+    /* jnav btm query dropdown */
+    .query-drop{
+        width: 100%;
+    }
+
+    .query-drop a{
+        display: block;
+        padding: 10px 20px;
+        color: #fff;
+    }
+
+    .query-drop .query-type:hover {
+        background-color: #eee;
+        color: #000;
+    }
+
+    .query-drop a .fas.fa-chevron-down{
+        font-size: 0.8em;
+        color: #a3a3a3;
+        margin-left: 5px;
+    }
+
+    .query-drop .hover-drop:hover .query-drops{
+        display: block;
+    }
+
+    .query-drop .query-drops{
+        background-color: #e3e3e3;
+        display: none;
+    }
+
+    .query-drop .query-drops a{
+        padding-left:50px;
+        padding-right: 20px;
+        justify-content: space-between;
+        display: flex;
+        color: #000;
+    }
+
+    .query-drop .query-drops a:hover span{
+        text-decoration: underline;
+    }
+
+    .query-drop .query-drops .hover-drops:hover .query-dropped{
+        display: block;
+    }
+
+    .query-drop .query-drops .query-dropped{
+        background-color: #ccc;
+        display: none;
+    }
+
+    .query-drop .query-drops .query-dropped a{
+        padding-left: 60px;
+        padding-right: 40px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        border-bottom: 0.8px solid #a3a3a3;
+    }
+
+    .query-drop .query-drops .query-dropped .query-edition{
+        padding: 15px 50px;
+        display: inline-block;
+    }
+
+    .query.contact{
+        color: #a3a3a3;
+    }
+
+    .query.contact .fas{
+        margin-right: 20px;
+    }
+
+    .query.contact:hover{
+        text-decoration: underline;
+        color: #fff;
+    }
+
+    .query-drop select{
+        margin:10px 20px;
+    }
+
+
 
     /* banner */
     .banner{
@@ -789,8 +886,12 @@ main #third .media-third-img{
     }
 
     #jumbotron .jnav.btm{
-        justify-content: space-around;
-        padding-left: 0;
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    #jumbotron .jnav.btm .hamburger{
+        margin-left: 20px;
     }
 
     #jumbotron .jnav.btm ul{
