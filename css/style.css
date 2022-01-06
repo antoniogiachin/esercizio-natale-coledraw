@@ -775,7 +775,7 @@ main #third .media-third-img{
 
     /* banner */
     .banner{
-        font-size: 0.6em;
+        font-size: 0.5em;
         overflow: hidden;
     }
 
@@ -1089,5 +1089,48 @@ main #third .media-third-img{
 
     main #third .third-txt p{
         padding: 0;
+    }
+
+    main #third .third-txt div::before{
+        margin-bottom: 10px;
+    }
+
+    main #third .third-txt h4{
+        font-size: 0.9em;
+        font-weight: 600;
+    }
+
+    /* main fourth */
+    main #fourth .section-container, main #six .section-container{
+        width: 100%;
+    }
+
+    main #fourth  .fourth-txt h4, main #six .six-txt h4{
+        font-size: 1.5em;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+
+    main #fourth .fourth-row .fourth-img, main #six .six-row .six-img{
+        width: 50%;
+    }
+
+    /* main fifth */
+    main #fifth .section-container{
+        width: 100%;
+        padding: 80px 0px;
+    }
+
+    main #fifth h3{
+        font-size: 1.2em;
+    }
+
+    main #fifth span{
+        font-size: 0.9em;
+    }
+
+    /* main six */
+    main #six .six-img img{
+        width: 20%;
     }
 }
